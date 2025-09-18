@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Dybala - La Joya</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* Encabezados */
+        h1 {
+            text-align: center;
+            color: #1a237e;
+            margin: 30px 0;
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(to right, #1a237e, #3949ab);
+            border-radius: 2px;
+        }
+        
+        h2 {
+            color: #3949ab;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e3f2fd;
+            font-size: 1.8rem;
+        }
+        
+        /* Párrafos */
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        
+        /* Imagen */
+        .player-image {
+            display: block;
+            margin: 30px auto;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .player-image:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Listas */
+        ol, ul {
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding-left: 10px;
+        }
+        
+        ol li {
+            background-color: #e8eaf6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        ol li:hover {
+            background-color: #c5cae9;
+        }
+        
+        ul li {
+            list-style-type: none;
+            position: relative;
+        }
+        
+        ul li::before {
+            content: "⚽";
+            position: absolute;
+            left: -25px;
+        }
+        
+        /* Enlaces */
+        a {
+            color: #3949ab;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+        }
+        
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #3949ab;
+            transition: width 0.3s;
+        }
+        
+        a:hover {
+            color: #1a237e;
+        }
+        
+        a:hover::after {
+            width: 100%;
+        }
+        
+        /* Contenedor principal */
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+        }
+        
+        /* Responsividad */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Paulo Dybala</h1>
+        
+        <h2>¿Quién es Dybala?</h2>
+        <p>Es un futbolista profesional desde su debut en 2011 con Instituto de Córdoba (Argentina), donde rompió récords de juventud y goles. Después de pasar por el Palermo, fue transferido a la Juventus en 2015, ganando múltiples títulos de Serie A y Coppa Italia. Actualmente juega para la A.S. Roma y es un jugador clave de la Selección Argentina, donde fue campeón del mundo.</p>
+        
+        <img src="paulo.webp" alt="Imagen de Paulo Dybala" class="player-image">
+        
+        <h2>Primeros años</h2>
+        <p>Los primeros años de la carrera de Dybala estuvieron marcados por su explosión en el fútbol argentino con el Instituto de Córdoba (2011-2012), donde rompió récords y atrajo la atención internacional. Luego, fichó por el Palermo de Italia (2012-2015), consolidándose en la Serie A y dando el salto definitivo a la Juventus en 2015, consolidando su posición como una estrella mundial.</p>
+        
+        <h2>¿Por qué se volvió futbolista?</h2>
+        <p>Paulo Dybala siempre fue un apasionado por el fútbol desde niño, influenciado por su familia y su talento natural, lo que lo llevó a convertirse en profesional. Su sueño era jugar para la selección argentina.</p>
+        
+        <h2>Logros</h2>
+        <ol>
+            <li>Copa Mundial de la FIFA: 1 (2022)</li>
+            <li>Finalissima (Copa de Campeones CONMEBOL-UEFA): 1 (2022)</li>
+            <li>Copa América: 3er lugar (2019)</li>
+            <li>Serie A: 5 (2015-16, 2016-17, 2017-18, 2018-19, 2019-20)</li>
+        </ol>
+        
+        <p>Si deseas saber más de Dybala, puedes visitar las siguientes fuentes:</p>
+        <ul>
+            <li><a href="https://es.wikipedia.org/wiki/Paulo_Dybala">lajoya</a></li>
+            <li><a href="https://www.transfermarkt.es/paulo-dybala/profil/spieler/206050">valor_actual</a></li>
+            <li><a href="https://www.espn.com.ve/futbol/jugador/_/id/164839/paulo-dybala">noticias</a></li>
+        </ul>
+    </div>
+</body>
+</html>
