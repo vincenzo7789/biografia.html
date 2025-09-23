@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Minimalista</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f9fc;
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 500px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #34495e;
+        }
+        
+        input[type="text"],
+        input[type="password"],
+        input[type="email"] {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #dce4ec;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            background-color: #f8fafc;
+        }
+        
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+        
+        input[type="radio"] {
+            margin-right: 8px;
+            accent-color: #3498db;
+        }
+        
+        .radio-group {
+            margin: 20px 0;
+        }
+        
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+        
+        br {
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            form {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="">
+        <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+        </p>
+
+        <p>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido">
+        </p>
+
+        <p>
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad">
+        </p>
+
+        <p>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena">
+        </p>
+
+        <p>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo">
+        </p>
+
+        <div class="radio-group">
+            <label>Género</label><br>
+            <input type="radio" name="genero" value="hombre" id="hombre">
+            <label for="hombre">Hombre</label><br>
+            
+            <input type="radio" name="genero" value="mujer" id="mujer">
+            <label for="mujer">Mujer</label><br>
+            
+            <input type="radio" name="genero" value="nada" id="nada">
+            <label for="nada">Nada</label>
+        </div>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
