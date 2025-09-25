@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurguerDelight</title>
+    <style>
+        /* Estilos generales */
+        body {
+            background-color: white;
+            color: red;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Estilos para el nav */
+        nav {
+            background-color: red;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        nav h1, nav h3 {
+            margin: 5px 0;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Estilos para centrar todos los títulos */
+        h1, h2, h3 {
+            text-align: center;
+        }
+        
+        /* Contenedor para las imágenes en línea */
+        .menu-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        /* Estilo para cada elemento del menú */
+        .menu-item {
+            text-align: center;
+            width: 30%;
+            min-width: 250px;
+            margin: 10px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        
+        /* Estilos para las imágenes */
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        /* Estilos para los párrafos */
+        p {
+            line-height: 1.5;
+            text-align: center;
+            max-width: 600px;
+            margin: 10px auto;
+        }
+        
+        /* Estilos para el footer */
+        footer {
+            background-color: #FFD1DC; /* Color pastel */
+            color: black;
+            padding: 15px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .menu-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .menu-item {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>BurguerDelight</h1>
+        <h3>hamburguesa calidad calidosa</h3>
+        <a href="#">inicio</a>
+        <a href="#">menu</a>
+        <a href="#">contacto</a>
+    </nav>
+    
+    <div style="padding: 20px;">
+        <h2>Por que elegirnos?</h2>
+        <p>porquqe somos nuenos, bonitos y obciamente muy barata hermano!!!</p>
+        
+        <h2>Menu</h2>
+        
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="hamburguesa.jpeg" alt="hamburguesa">
+                <h3>Clasica</h3>
+                <p>hamburguesa de simepre, sabor como nunca</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="hambuergusadoble.jpeg" alt="haburguesadoble">
+                <h3>Doble</h3>
+                <p>como la clasica, pero doble en todo excepto en el precio</p>
+            </div>
+            
+            <div class="menu-item">
+                <img src="megahamburguesa.jpeg" alt="megahamburguesa">
+                <h3>megahamburguesa</h3>
+                <p>una mega explocion de sabor, sin afectar la billetera, con refresco gratis</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>dirreccion: mas cerca de lo que te imaginas <br>
+        numero: no tenemos, pero siguenos en ig <br>
+        ig: hamburguesasinsanas</p>
+    </footer>
+</body>
+</html>
